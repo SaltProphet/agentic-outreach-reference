@@ -1,4 +1,5 @@
 import { createRootRoute, HeadContent, Outlet, Scripts } from "@tanstack/react-router";
+import { Analytics } from "@vercel/analytics/react";
 import appCss from "../styles.css?url";
 
 const APP_NAME = "Agentic Outreach Reference Implementation";
@@ -27,6 +28,7 @@ export const Route = createRootRoute({
       <body className="bg-bg text-fg">
         <Outlet />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   ),
